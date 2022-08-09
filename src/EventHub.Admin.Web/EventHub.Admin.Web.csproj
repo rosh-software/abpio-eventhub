@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EventHub.Admin.HttpApi.Client\EventHub.Admin.HttpApi.Client.csproj" />
-    <ProjectReference Include="..\..\modules\payment\src\Payment.Admin.Blazor\Payment.Admin.Blazor.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,5 +25,11 @@
 
   <ItemGroup>
     <EmbeddedResource Include="wwwroot\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Payment.Admin.Blazor">
+      <HintPath>..\..\modules\payment\src\Payment.Admin.Blazor\bin\Debug\net6.0\Payment.Admin.Blazor.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

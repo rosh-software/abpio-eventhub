@@ -40,4 +40,10 @@
     <None Remove="Logs\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Payment.Domain.Shared">
+      <HintPath>..\..\modules\payment\src\Payment.Domain.Shared\bin\Debug\netstandard2.0\Payment.Domain.Shared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

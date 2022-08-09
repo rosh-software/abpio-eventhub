@@ -3,18 +3,24 @@
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>EventHub</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\EventHub.Application.Contracts\EventHub.Application.Contracts.csproj" />
-    <ProjectReference Include="..\..\modules\payment\src\Payment.HttpApi.Client\Payment.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\EventHub.Domain\EventHub.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Http.Client" Version="5.0.1" />
     <PackageReference Include="Volo.CmsKit.Public.HttpApi.Client" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Payment.HttpApi.Client">
+      <HintPath>..\..\modules\payment\src\Payment.HttpApi.Client\bin\Debug\netstandard2.0\Payment.HttpApi.Client.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

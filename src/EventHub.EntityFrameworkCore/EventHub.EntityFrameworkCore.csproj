@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\modules\payment\src\Payment.EntityFrameworkCore\Payment.EntityFrameworkCore.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0" />
   </ItemGroup>
 
@@ -26,6 +22,12 @@
     <PackageReference Include="Volo.Abp.BackgroundJobs.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Volo.Abp.AuditLogging.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Volo.CmsKit.EntityFrameworkCore" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Payment.EntityFrameworkCore">
+      <HintPath>..\..\modules\payment\src\Payment.EntityFrameworkCore\bin\Debug\net6.0\Payment.EntityFrameworkCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

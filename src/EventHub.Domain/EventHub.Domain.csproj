@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\common.props" />
 
@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EventHub.Domain.Shared\EventHub.Domain.Shared.csproj" />
-    <ProjectReference Include="..\..\modules\payment\src\Payment.Domain\Payment.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +32,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Payment.Domain">
+      <HintPath>..\..\modules\payment\src\Payment.Domain\bin\Debug\netstandard2.0\Payment.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Payment.Domain.Shared">
+      <HintPath>..\..\modules\payment\src\Payment.Domain.Shared\bin\Debug\netstandard2.0\Payment.Domain.Shared.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

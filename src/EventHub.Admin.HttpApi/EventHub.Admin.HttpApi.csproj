@@ -9,7 +9,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\EventHub.Admin.Application.Contracts\EventHub.Admin.Application.Contracts.csproj" />
-        <ProjectReference Include="..\..\modules\payment\src\Payment.Admin.HttpApi\Payment.Admin.HttpApi.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -18,6 +17,15 @@
         <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="5.0.1" />
         <PackageReference Include="Volo.CmsKit.Admin.HttpApi" Version="5.0.1" />
         <PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="5.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Payment.Admin.HttpApi">
+        <HintPath>..\..\modules\payment\src\Payment.Admin.HttpApi\bin\Debug\net6.0\Payment.Admin.HttpApi.dll</HintPath>
+      </Reference>
+      <Reference Include="Payment.Domain.Shared">
+        <HintPath>..\..\modules\payment\src\Payment.Domain.Shared\bin\Debug\netstandard2.0\Payment.Domain.Shared.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

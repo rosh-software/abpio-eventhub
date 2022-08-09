@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\modules\payment\src\Payment.Domain.Shared\Payment.Domain.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Volo.Abp.BlobStoring.Database.Domain.Shared" Version="5.0.1" />
     <PackageReference Include="Volo.Abp.Identity.Domain.Shared" Version="5.0.1" />
     <PackageReference Include="Volo.Abp.IdentityServer.Domain.Shared" Version="5.0.1" />
@@ -30,6 +26,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Payment.Domain.Shared">
+      <HintPath>..\..\modules\payment\src\Payment.Domain.Shared\bin\Debug\netstandard2.0\Payment.Domain.Shared.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

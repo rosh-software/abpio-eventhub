@@ -17,7 +17,6 @@
     <ProjectReference Include="..\EventHub.HttpApi\EventHub.HttpApi.csproj" />
     <ProjectReference Include="..\EventHub.HttpApi.Client\EventHub.HttpApi.Client.csproj" />
     <ProjectReference Include="..\EventHub.Web.Theme\EventHub.Web.Theme.csproj" />
-    <ProjectReference Include="..\..\modules\payment\src\Payment.Web\Payment.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +43,12 @@
     <Content Remove="Logs\**" />
     <EmbeddedResource Remove="Logs\**" />
     <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Payment.Web">
+      <HintPath>..\..\modules\payment\src\Payment.Web\bin\Debug\net6.0\Payment.Web.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

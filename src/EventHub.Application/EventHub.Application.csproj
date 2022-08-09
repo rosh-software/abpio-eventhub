@@ -10,12 +10,17 @@
   <ItemGroup>
     <ProjectReference Include="..\EventHub.Domain\EventHub.Domain.csproj" />
     <ProjectReference Include="..\EventHub.Application.Contracts\EventHub.Application.Contracts.csproj" />
-    <ProjectReference Include="..\..\modules\payment\src\Payment.Application\Payment.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="5.0.1" />
     <PackageReference Include="Volo.CmsKit.Public.Application" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Payment.Application">
+      <HintPath>..\..\modules\payment\src\Payment.Application\bin\Debug\netstandard2.0\Payment.Application.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
