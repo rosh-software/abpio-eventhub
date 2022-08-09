@@ -46,6 +46,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Payment.Application.Contracts">
+      <HintPath>..\..\modules\payment\src\Payment.Application.Contracts\bin\Debug\netstandard2.0\Payment.Application.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Payment.Domain.Shared">
+      <HintPath>..\..\modules\payment\src\Payment.Domain.Shared\bin\Debug\netstandard2.0\Payment.Domain.Shared.dll</HintPath>
+    </Reference>
     <Reference Include="Payment.Web">
       <HintPath>..\..\modules\payment\src\Payment.Web\bin\Debug\net6.0\Payment.Web.dll</HintPath>
     </Reference>
